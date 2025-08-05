@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Talita's Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef1f5; /* Light pink background */
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4; /* Hot pink */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #ff1493; /* Deep pink */
+        }
+        nav {
+            background-color: #ff1493; /* Deep pink */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #ff69b4; /* Hot pink */
+            border-radius: 4px;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #ff69b4;
+            border-bottom: 2px solid #ff1493;
+            padding-bottom: 5px;
+        }
+        form {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px dashed #ff1493; /* Dashed border */
+            background-color: white;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ff1493;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Registrasi Talita's Shop</h1>
+</header>
+
+<nav>
+    <a href="#jenis-baju">Jenis Baju</a>
+    <a href="#ukuran">Ukuran</a>
+    <a href="#kategori">Kategori</a>
+    <a href="#bahan">Bahan Dasar</a>
+    <a href="#harga">Harga</a>
+    <a href="#stok">Ready Stok</a>
+    <a href="#nama-pembeli">Nama Pembeli</a>
+</nav>
+
+<main>
+    <form>
+        <h2 id="jenis-baju">1. Jenis Baju</h2>
+        <label for="jenis-baju">Pilih Jenis Baju:</label>
+        <select id="jenis-baju" name="jenis-baju">
+            <option value="dress">Dress</option>
+            <option value="kaos">Kaos</option>
+            <option value="kemeja">Kemeja</option>
+            <option value="renang">Renang</option>
+            <option value="piyama">Piyama</option>
+        </select>
+
+        <h2 id="ukuran">2. Ukuran Baju/Size</h2>
+        <label for="ukuran">Ukuran:</label>
+        <input type="text" id="ukuran" name="ukuran" placeholder="Masukkan ukuran baju">
+
+        <h2 id="kategori">3. Kategori</h2>
+        <label for="kategori">Pilih Kategori:</label>
+        <select id="kategori" name="kategori">
+            <option value="anak">Anak</option>
+            <option value="balita">Balita</option>
+            <option value="remaja">Remaja</option>
+            <option value="dewasa">Dewasa</option>
+        </select>
+
+        <h2 id="bahan">4. Bahan Dasar</h2>
+        <label for="bahan">Pilih Bahan Dasar:</label>
+        <select id="bahan" name="bahan">
+            <option value="katun">Katun</option>
+            <option value="linen">Linen</option>
+            <option value="rayon">Rayon</option>
+        </select>
+
+        <h2 id="harga">5. Harga Baju</h2>
+        <label for="harga">Harga:</label>
+        <input type="text" id="harga" name="harga" placeholder="Masukkan harga baju">
+
+        <h2 id="stok">6. Ready Stok</h2>
+        <label for="stok">Jumlah Awal Stok:</label>
+        <input type="text" id="stok" name="stok" placeholder="Masukkan jumlah stok">
+
+        <h2 id="nama-pembeli">7. Nama Pembeli</h2>
+        <label for="nama-pembeli">Nama:</label>
+        <input type="text" id="nama-pembeli" name="nama-pembeli" placeholder="Masukkan nama pembeli">
+
+        <button type="submit">Daftar</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Talita's Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
