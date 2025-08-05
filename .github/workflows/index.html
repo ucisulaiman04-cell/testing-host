@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Japanese Tea House - Uji Chaen</title>
+    <style>
+        body {
+            font-family: 'Meiryo', Yu Gothic, sans-serif;
+            background-color: #f8f8f0;
+            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f481fd01-37c8-4699-93b0-e5568a285844.png');
+            background-blend-mode: multiply;
+            padding: 20px;
+            color: #4a593d;
+        }
+        nav {
+            background-color: rgba(139, 90, 43, 0.85);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 3px solid #5a4a3a;
+            font-size: 1.1em;
+            backdrop-filter: blur(2px);
+        }
+        nav a {
+            color: #f9f3e9;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 0;
+            font-family: 'serif';
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            background-color: #5a4a3a;
+        }
+        form {
+            background-color: rgba(245, 239, 230, 0.85);
+            padding: 30px;
+            border-radius: 2px;
+            box-shadow: 0 4px 12px rgba(90, 74, 58, 0.15);
+            max-width: 550px;
+            margin: 40px auto;
+            border: 1px solid #8b5a2b;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #5a4a3a;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 200px; /* Sesuaikan ukuran logo */
+            margin: 10px auto;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: rgba(90, 74, 58, 0.8);
+            color: #f5efe6;
+            border-top: 1px solid #8b5a2b;
+            font-family: 'Meiryo', serif;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bedfdd1f-541f-434a-be5b-183ae08693d4.png" alt="Sakura Café Logo">
+    <h1 style="font-family: 'HiraMinProN-W6', serif; color: #4a593d; letter-spacing: 1px;">宇治茶園 Uji Chaen</h1>
+</header>
+
+<nav>
+    <a href="#home">ホーム</a>
+    <a href="#menu">メニュー</a>
+    <a href="#about">私たちについて</a>
+    <a href="#contact">連絡先</a>
+</nav>
+
+<form action="" method="POST" enctype="multipart/form-data">
+    <label for="nama_produk">Nama Pelanggan:</label>
+    <input type="text" id="nama_produk" name="nama_produk" required>
+
+    <label for="Kategori">Select Coffee:</label>
+    <select id="Kategori" name="Kategori" required>
+        <option value="" disabled selected>メニューを選択</option>
+        <option value="Matcha">抹茶</option>
+        <option value="Hojicha">ほうじ茶</option>
+        <option value="Gyokuro">玉露</option>
+        <option value="Sencha">煎茶</option>
+        <option value="Genmaicha">玄米茶</option>
+    </select>
+
+    <label for="harga">No. Telpon:</label>
+    <input type="number" id="harga" name="harga" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="deskripsi">Alamat:</label>
+    <textarea id="deskripsi" name="deskripsi" required></textarea>
+
+    <label for="stok">Jumlah Pesanan:</label>
+    <input type="number" id="stok" name="stok" required>
+
+    <button type="submit" name="submit" style="background-color: #5a4a3a; color: #f5efe6; font-family: 'Meiryo', sans-serif;">ご注文はこちら</button>
+</form>
+
+<footer>
+    <p>&copy; 2024 宇治茶園 - Traditional Japanese Tea House. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
